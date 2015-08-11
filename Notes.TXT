@@ -1,0 +1,11 @@
+Angular App Template
+
+
+Using:
+
+Rendering on Server initially, subsequently on Client [No refresh button!!!]
+Rendering with VirtualDom
+Socket.IO when available
+Webpack to make AngularJS Modules
+Fancy Animations
+ES2015, Babel
