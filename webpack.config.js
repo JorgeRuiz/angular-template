@@ -7,11 +7,11 @@ var path = require('path');
 var webpack = require('webpack');
 var CommonsChunkPlugin = require('./node_modules/webpack/lib/optimize/CommonsChunkPlugin');
 
-var bowerDir = __dirname + '/app/js/bower_components/';
+var bowerDir = __dirname + '/app/bower_components/';
 var nodeDir = __dirname + '/node_modules/';
-var angularDir = __dirname + '/app/js/';
-var vendorDir = __dirname + '/app/js/vendor/';
-var jqueryDir = __dirname + '/app/js/vendor/jquery/';
+var angularDir = __dirname + '/app/';
+var vendorDir = __dirname + '/app/vendor/';
+var jqueryDir = __dirname + '/app/vendor/jquery/';
 
 var config = [
 
@@ -20,7 +20,7 @@ var config = [
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     name: 'app',
-    context: __dirname + '/app/js/',
+    context: __dirname + '/app/',
     entry: 'app.js',
 
     addVendor: function(name, path) {
@@ -29,7 +29,7 @@ var config = [
     },
 
     resolve: {
-      root: __dirname + '/app/js/',
+      root: __dirname + '/app/',
       extensions: ['', '.js', '.json'],
       alias: {
 
@@ -48,7 +48,7 @@ var config = [
       }
     },
     output: {
-      path: __dirname + '/app/js/',
+      path: __dirname + '/public/js/',
       filename: 'bundle.js'
     },
 
