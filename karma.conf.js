@@ -11,11 +11,9 @@ module.exports = function(config) {
     basePath: './',
     frameworks: ['jasmine', 'tap'],
     files: [
-      'app/js/bower_components/angular/angular.js',
-      'app/js/bower_components/angular-route/angular-route.js',
-      'app/js/bower_components/angular-mocks/angular-mocks.js',
-      'app/js/**/*.js',
-      '_tests_/**/*.js'
+      'app/bower_components/angular*/*.js',
+      'app/**/*.js',
+      'test/**/*.js'
     ],
 
     preprocessors: {
